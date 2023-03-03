@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Compendium</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  	/>
+
+		<link rel="stylesheet" href="../css.css"/>
+		<script src="Spells/spellFinder.js"></script>
+	</head>
+	<body onload="populateTables()">
+		<div class="vh-100">
+
+			<!-- NAV MENU -->
+			<div class="container nav-menu">
+				<header class="d-flex justify-content-center py-3">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a href="../index.html" class="nav-link" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="compendium.html" class="nav-link active">Compendium</a></li>
+				</ul>
+				</header>
+			</div>
+
+			<!-- SPELL MENU -->
+			<div class="container h-80 p-0">
+				<!-- SPELL HEAD SELECTOR -->
+				<div class="container selection d-flex h-10 p-0" style="background-color: aqua;">
+					<!-- MISC SELECTOR -->
+					<div class="container d-flex h-100 col-4 p-0 m-0">
+						<div class="container h-100 p-0 m-0">
+							<div class="row container d-flex h-33 p-0 m-0">
+								<select class="border-0 col w-100 p-0"></select>
+								<span class="center h-100 col p-0">Scuola</span>
+							</div>
+							<div class="row container d-flex h-33 p-0 m-0">
+								<input type="checkbox" class="col"><span class="col">Rituale</span>
+							</div>
+							<div class="row container d-flex h-33 p-0 m-0">
+								<input type="checkbox" class="col"><span class="col">Concentrazione</span>
+							</div>
+						</div>
+					</div>
+					<!-- CLASS SELECTOR -->
+					<div class="container d-inline-block h-100 col-8 p-0">
+						<!-- FIRST ROW BUTTONS -->
+						<div class="row container class-buttons h-50 m-0 p-0">
+							<button class="col-3">BARDO</button>
+							<button class="col-3">CHIERICO</button>
+							<button class="col-3">DRUIDO</button>
+							<button class="col-3">PALADINO</button>
+						</div>
+						<!-- SECOND ROW BUTTONS -->
+						<div class="row container class-buttons h-50 m-0 p-0">
+							<button class="col-3">RANGER</button>
+							<button class="col-3">STREGONE</button>
+							<button class="col-3">WARLOCK</button>
+							<button class="col-3">MAGO</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- SPELLS BODY SELECTOR -->
+				<div class="container d-flex h-100 m-0 p-0">
+					<!-- SPELLS LISTS -->
+					<div class="row h-100 col-4 p-0 m-0 spell-screen" onclick="openSpell(event)">
+						<!-- CANTRIPS -->
+						<div class="spell-table">
+							<p class="spell-level">Trucchetti</p>
+							<div>
+								<ul id="cantrips">
+									<li>Amicizia</li>
+									<li>Beffa Crudele</li>
+									<li>Colpo Accurato</li>
+									<li>Illusione minore</li>
+									<li>Interdizione alle Lame</li>
+									<li>Luce</li>
+									<li>Luci Danzanti</li>
+									<li>Mano Magica</li>
+									<li>Messaggio</li>
+									<li>Prestidigitazione</li>
+									<li>Riparare</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 1° LEVEL -->
+						<div class="spell-table">
+							<p class="spell-level">Livello 1</p>
+							<div>
+								<ul id="1" >
+									<li>Amicizia con gli Animali</li>
+									<li>Anatema</li>
+									<li>Caduta Morbida</li>
+									<li>Camuffare Se Stesso</li>
+									<li>Charme su Persone</li>
+									<li>Comprensione dei Linguaggi</li>
+									<li>Cura ferite</li>
+									<li>Eroismo</li>
+									<li>Identificare</li>
+									<li>Immagine Silenziosa</li>
+									<li>Individuazione del Magico</li>
+									<li>Luminescenza</li>
+									<li>Onda Tonante</li>
+									<li>Parlare con gli Animali</li>
+									<li>Parola Guaritrice</li>
+									<li>Passo Veloce</li>
+									<li>Risata Incontenibile di Tasha</li>
+									<li>Scritto Illusorio</li>
+									<li>Servitore Inosservato</li>
+									<li>Sonno</li>
+									<li>Sussurri Dissonanti</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 2° LEVEL -->
+						<div class="spell-table">
+							<p class="spell-level">Livello 2</p>
+							<div>
+								<ul id="2" >
+									<li>Allucinazione di Forza</li>
+									<li>Animale Messaggero</li>
+									<li>Blocca Persone</li>
+									<li>Bocca Magica</li>
+									<li>Calmare Emozioni</li>
+									<li>Caratteristica Potenziata</li>
+									<li>Cecità Sordità</li>
+									<li>Corona di Follia</li>
+									<li>Estasiare</li>
+									<li>Frantumare</li>
+									<li>Individuazione dei Pensieri</li>
+									<li>Invisibilità</li>
+									<li>Localizza Animali o Vegetali</li>
+									<li>Localizza Oggetto</li>
+									<li>Nube di Pugnali</li>
+									<li>Riscaldare il Metallo</li>
+									<li>Ristorare Inferiore</li>
+									<li>Scassinare</li>
+									<li>Silenzio</li>
+									<li>Suggestione</li>
+									<li>Vedere Invisibilità</li>
+									<li>Zona di Verità</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 3° LEVEL -->
+						<div id="3" class="spell-table">
+							<p class="spell-level">Livello 3</p>
+							<div>
+								<ul>
+									<li>Anti-Individuazione</li>
+									<li>Capanna di Leomund</li>
+									<li>Chiaroveggenza</li>
+									<li>Crescita Vegetale</li>
+									<li>Dissolvi Magie</li>
+									<li>Glifo di Interdizione</li>
+									<li>Immagine Maggiore</li>
+									<li>Inviare</li>
+									<li>Linguaggi</li>
+									<li>Morte Apparente</li>
+									<li>Nube Maleodorante</li>
+									<li>Parlare con i Morti</li>
+									<li>Parlare con i Vegetali</li>
+									<li>Paura</li>
+									<li>Scagliare Maledizione</li>
+									<li>Trama Ipnotica</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 4° LEVEL -->
+						<div id="4" class="spell-table">
+							<p class="spell-level">Livello 4</p>
+							<div>
+								<ul>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 5° LEVEL -->
+						<div id="5" class="spell-table">
+							<p class="spell-level">Livello 5</p>
+							<div>
+								<ul>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 6° LEVEL -->
+						<div id="6" class="spell-table">
+							<p class="spell-level">Livello 6</p>
+							<div>
+								<ul>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 7° LEVEL -->
+						<div id="7" class="spell-table">
+							<p class="spell-level">Livello 7</p>
+							<div>
+								<ul>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 8° LEVEL -->
+						<div id="8" class="spell-table">
+							<p class="spell-level">Livello 8</p>
+							<div>
+								<ul>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 9° LEVEL -->
+						<div id="9" class="spell-table">
+							<p class="spell-level">Livello 9</p>
+							<div>
+								<ul>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<!-- SPELLS PAGE -->
+					
+				
+					</div>
+					<iframe id="spellWindow" src="" class="h-100 w-100 m-0 p-0 border-0">
+
+					</iframe>
+				</div>
+
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	</body>
+</html>

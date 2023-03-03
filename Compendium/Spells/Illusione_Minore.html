@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  	/>
+
+		<link rel="stylesheet" href="../../css.css">
+		<link rel="stylesheet" href="spellFormat.css">
+		<script src="spellFinder.js"></script>
+	</head>
+	<body onload="buildSpell()" style="overflow: visible;">
+
+		<div class="vh-100">
+	
+			<div class="container h-85 position-relative">
+				
+				<p id="spell-title" class="bold">
+					
+				</p>
+				
+				<p id="spell-school" class="fst-italic">
+					
+				</p>
+				<p id="spell-components">
+					<span class="bold">Tempo di Lancio: </span><span id="spell-components-time"></span><br>
+					<span class="bold">Gittata: </span><span id="spell-components-range"></span><br>
+					<span class="bold">Componenti: </span><span id="spell-components-components"></span><br>
+					<span class="bold">Durata: </span><span id="spell-components-duration"></span>
+				</p>
+				<p id="spell-description">
+					
+				</p>
+
+				
+				
+				<button class="name noselect position-fixed bottom-0" onclick="downloadFile()">Download PDF</button>
+				
+				<textarea id="spell" class="visually-hidden">
+					Trucchetto di Illusione
+Tempo di lancio: 1 azione
+Gittata: 9 metri
+Componenti: S, M (un ciuffo di lana)
+Durata: 1 minuto
+L'incantatore crea un suono o un'immagine di un oggetto entro gittata che permane per la durata dell'incantesimo. L'illusione termina anche se l'incantatore la interrompe con un'azione o se lancia questo incantesimo di nuovo.
+Se l'incantatore crea un suono, il suo volume può variare da un sussurro a un urlo. Può trattarsi della voce dell'incantatore, della voce di qualcun altro, del ruggito di un leone, di un rullo di tamburi o di un qualsiasi altro suono a sua scelta. Il suono può echeggiare ininterrottamente per tutta la durata, oppure l'incantatore può emettere suoni più discreti in momenti diversi prima che l'incantesimo termini.
+Se l'incantatore crea l'immagine di un oggetto (come per esempio una sedia, una serie di impronte nel fango o uno scrigno), quell'oggetto non deve essere più grande di un cubo con spigolo di 1,5 metri. L'immagine non può emettere suoni, luci, odori o qualsiasi altro effetto sensoriale. Un'interazione fisica con l'immagine rivela che si tratta di un'illusione, in quanto gli oggetti la attraversano.
+Se una creatura usa la sua azione per esaminare il suono o l'immagine, può determinare che si tratta di un'illusione se effettua con successo una prova di Intelligenza (Indagare) contro la CD del tiro salvezza dell'incantesimo. Se una creatura discerne l'illusione per ciò che è, l'illusione si attenua per quella creatura.
+				</textarea>
+			</div>
+			
+			
+
+
+		</div>
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	
+	</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+	user-select: none;
+}
+
+.no-select{
+	user-select: none;
+}
+
+.h-10{
+	height: 10%;
+}
+
+.h-33{
+	height: 33%;
+}
+
+.h-80{
+	height: 80%;
+}
+
+.h-85{
+	height: 85%;
+}
+
+.h-95{
+	height: 95%;
+}
+
+.center{
+	display: block;
+	text-align: center;
+}
+
+.bigText{
+	font-size: 1.3em;
+}
+
+.class-buttons button{
+	background-color: #888;
+	height: 100%;
+	width: 25%;
+	margin: none;
+	padding: 12px;
+	border: none;
+}
+
+.class-buttons button:active{
+	background-color: violet;
+}
+
+.name{
+	position: relative;
+	text-align: center;
+	margin-bottom: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: whitesmoke;
+	text-shadow: 0 0 10px #000;
+}
+
+.spell-screen{
+	overflow-x: hidden;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.spell-table{
+	margin: 5px;
+	font-size: large;
+}
+
+.spell-level{
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	margin-bottom: 0px;
+	text-align: center;
+	font-weight: bold;
+	top: 0px;
+	position: sticky;
+	background-color: lightblue;
+	width: 100%;
+}
+
+.spell-selection{
+	border-style: solid;
+	border-right: solid;
+	border-right-width: 3px;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+
+}
+
+.spell-table li:hover{
+	margin-left: 5%;
+}
