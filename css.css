@@ -1,0 +1,248 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	user-select: none;
+	overflow: none;
+}
+
+.body-compendium{
+	background-color: #000;
+}
+
+.bg-image {
+	background-image: url('assets/2.jpg'), url('assets/3.png');
+	background-size: auto 100vh;
+	background-position: left center, right center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+}
+
+.no-select{
+	user-select: none;
+}
+
+.h-5{
+	height: 5%;
+}
+
+.h-10{
+	height: 10%;
+}
+
+.h-33{
+	height: 33%;
+}
+
+.h-42{
+	height: 42%;
+}
+
+.h-80{
+	height: 80%;
+}
+
+.h-85{
+	height: 85%;
+}
+
+.h-90{
+	height: 90%;
+}
+
+.h-93{
+	height: 93%;
+}
+
+
+.h-95{
+	height: 95%;
+}
+
+.right{
+	display: block;
+	text-align: right;
+}
+
+.left{
+	display: block;
+	text-align: left;
+}
+
+.bigText{
+	font-size: 1.3em;
+}
+
+.class-buttons button {
+	border: none;
+	position: relative;
+	background-color: #f2f2f2;
+	color: #ffa500;
+	border: 3px solid #ffa500;
+	cursor: pointer;
+	transition: all 0.4s;
+	overflow: hidden;
+	border-radius: 100px;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+ .class-buttons .btn-active{
+	background-color: #ffa500;
+	color: #00B4CC;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.name{
+	position: relative;
+	text-align: center;
+	margin-bottom: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: whitesmoke;
+	text-shadow: 0 0 10px #000;
+}
+
+.nav-menu{
+	background-color: #f2f2f2;
+	background-size: auto 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#spellWindow{
+	background-color: #f2f2f2;
+	background-image: url(assets/x.jpg);
+	background-size: auto 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-width: 2px 2px 2px 1px;
+	border-color: black;
+}
+
+.spell-screen{
+	background-color: whitesmoke;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border-style: solid;
+	border-width: 2px 1px 2px 2px;
+}
+
+.spell-table{
+	margin: 5px;
+	font-size: large;
+}
+
+.spell-level{
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	margin-bottom: 0px;
+	text-align: center;
+	font-weight: bold;
+	top: 0px;
+	position: sticky;
+	background-color: #00B4CC;
+	width: 100%;
+}
+
+.border{
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+
+.spell-selection{
+	border-style: solid;
+	border-right: solid;
+	border-right-width: 3px;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+}
+
+.selection{
+	background-color: #00B4CC;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+
+}
+
+.spell-table li:hover{
+	margin-left: 5%;
+}
+
+.search-term {
+  width: 100%;
+  border: 2px solid #00B4CC;
+  padding: 0px;
+  height: 50%;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  color: #00B4CC;
+  text-indent: 2%;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search-term::-webkit-input-placeholder {
+    /* Safari/Chrome */
+    text-indent: 2%;
+	color: #00B4CC;
+  }
+  .search-term::-moz-placeholder {
+    /* Firefox 19+ */
+    text-indent: 2%;
+	color: #00B4CC;
+  }
+  .search-term:-moz-placeholder {
+    /* Firefox 18- */
+    text-indent: 2%;
+	color: #00B4CC;
+  }
+  .search-term:-ms-input-placeholder {
+    /* IE 10+ */
+    text-indent: 2%;
+	color: #00B4CC;
+  }

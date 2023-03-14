@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  	/>
+
+		<link rel="stylesheet" href="../../css.css">
+		<link rel="stylesheet" href="spellFormat.css">
+		<script src="spellFinder.js"></script>
+	</head>
+	<body onload="buildSpell()" style="overflow: visible;">
+
+		<div class="vh-100">
+	
+			<div class="container h-85 position-relative">
+				
+				<p id="spell-title" class="bold">
+					
+				</p>
+				
+				<p id="spell-school" class="fst-italic">
+					
+				</p>
+				<p id="spell-components">
+					<span class="bold">Tempo di Lancio: </span><span id="spell-components-time"></span><br>
+					<span class="bold">Gittata: </span><span id="spell-components-range"></span><br>
+					<span class="bold">Componenti: </span><span id="spell-components-components"></span><br>
+					<span class="bold">Durata: </span><span id="spell-components-duration"></span>
+				</p>
+				<p id="spell-description">
+					
+				</p>
+
+				
+				
+				<button class="name noselect position-fixed bottom-0" onclick="downloadFile()">Download PDF</button>
+				
+				<textarea id="spell" class="visually-hidden">
+					Illusione di 2° livello
+Tempo di Lancio: 1 azione
+Gittata: 18 metri
+Componenti: V, S, M (un ciuffo di lana)
+Durata: Concentrazione, fino a 1 minuto
+L'incantatore crea un'illusione che mette radici nella mente di una creatura entro gittata e che egli sia in grado di vedere. Il bersaglio deve effettuare un tiro salvezza su Intelligenza. Se lo fallisce, l'incantatore crea un oggetto, una creatura o un fenomeno fittizio di altra natura visibile a sua scelta, che non sia più grande di un cubo con spigolo di 3 metri e sia percepibile soltanto dal bersaglio per la durata dell'incantesimo. Questo incantesimo non ha effetto sui costrutti o sui non morti.
+L'allucinazione include suoni, temperature e altri stimoli analoghi, anch'essi evidenti soltanto alla creatura.
+Il bersaglio può usare la sua azione per esaminare l'allucinazione con una prova di Intelligenza (Indagare) contro la CD del tiro salvezza dell'incantesimo. Se la prova ha successo, il bersaglio capisce che l'allucinazione è un'illusione e l'incantesimo termina.
+Finché un bersaglio è influenzato dall'incantesimo, considera l'allucinazione come se fosse reale. Il bersaglio razionalizza qualsiasi esito illogico prodotto dalle sue interazioni con l'allucinazione. Per esempio, un bersaglio che tenta di camminare su un ponte fittizio che attraversa un baratro cadrà non appena mette piede sul ponte. Se il bersaglio sopravvive alla caduta, crederà comunque che il ponte esista e penserà a un'altra spiegazione per la sua caduta (è stato spinto, è scivolato, o un vento forte lo ha buttato di sotto).
+Un bersaglio influenzato è talmente convinto che l'allucinazione sia reale che può perfino subire danni da essa. Un'allucinazione creata per apparire come una creatura può attaccare il bersaglio. Analogamente un'allucinazione creata per apparire come un fuoco, una pozza d'acido o un flusso di lava può bruciare il bersaglio. A ogni round, nel turno dell'incantatore, l'allucinazione può infliggere 1d6 danni psichici al bersaglio se esso si trova nell'area dell'allucinazione o entro 1,5 metri da essa purché l'allucinazione riproduca una creatura o un pericolo in grado di infliggere danni logicamente, per esempio attaccando. Il bersaglio percepisce i danni come se fossero del tipo appropriato per l'illusione.</textarea>
+			</div>
+			
+			
+
+
+		</div>
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	
+	</body>
+</html>

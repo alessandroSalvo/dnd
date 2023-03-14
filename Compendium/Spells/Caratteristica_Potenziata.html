@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  	/>
+
+		<link rel="stylesheet" href="../../css.css">
+		<link rel="stylesheet" href="spellFormat.css">
+		<script src="spellFinder.js"></script>
+	</head>
+	<body onload="buildSpell()" style="overflow: visible;">
+
+		<div class="vh-100">
+	
+			<div class="container h-85 position-relative">
+				
+				<p id="spell-title" class="bold">
+					
+				</p>
+				
+				<p id="spell-school" class="fst-italic">
+					Trasmutazione di 2° livello
+				</p>
+				<p id="spell-components">
+					<span class="bold">Tempo di Lancio: </span><span id="spell-components-time">1 azione</span><br>
+					<span class="bold">Gittata: </span><span id="spell-components-range"></span>Contatto<br>
+					<span class="bold">Componenti: </span><span id="spell-components-components">V, S, M (peli o piume strappati a una bestia)</span><br>
+					<span class="bold">Durata: </span><span id="spell-components-duration">Concentrazione, fino a 1 ora</span>
+				</p>
+				<p id="spell-description">
+					L'incantatore tocca una creatura e le conferisce un potenziamento magico, scegliendo uno degli effetti seguenti che permane finché l'incantesimo non termina.
+					<ul class="spell-description">
+						<li><strong>Astuzia della Volpe. </strong>Il bersaglio dispone di vantaggio alle prove di Intelligenza.</li>
+						<li><strong>Forza del Toro. </strong>Il bersaglio dispone di vantaggio alle prove di Forza e la sua capacità di trasporto raddoppia.</li>
+						<li><strong>Grazia del Gatto. </strong>Il bersaglio dispone di vantaggio alle prove di Destrezza. Inoltre non subisce danni se cade da 6 metri o meno. purché non sia incapacitato.</li>
+						<li><strong>Resistenza dell'Orso. </strong>Il bersaglio dispone di vantaggio alle prove di Costituzione. Ottiene anche 2d6 punti ferita temporanei, che vanno perduti quando l'incantesimo termina.</li>
+						<li><strong>Saggezza del Gufo. </strong>Il bersaglio dispone di vantaggio alle prove di Saggezza.</li>
+						<li><strong>Splendore dell'Aquila. </strong>Il bersaglio dispone di vantaggio alle prove di Carisma.</li>
+					</ul>
+					<p class="spell-description">
+						<strong>Ai Livelli Superiori. </strong>Quando incantatore lancia questo incantesimo usando uno slot incantesimo di 3° livello o superiore, può bersagliare una creatura aggiuntiva per ogni slot di livello superiore al 2°.
+					</p>
+				</p>
+
+				
+				
+				<button class="name noselect position-fixed bottom-0" onclick="downloadFile()">Download PDF</button>
+				
+				<textarea id="spell" class="visually-hidden dont">
+					
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 				</textarea>
+			</div>
+			
+			
+
+
+		</div>
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
